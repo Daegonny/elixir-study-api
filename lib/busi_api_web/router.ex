@@ -7,6 +7,17 @@ defmodule BusiApiWeb.Router do
 
   scope "/api", BusiApiWeb do
     pipe_through :api
+
+    resources "/business", BusinessController, except: [:new, :edit]
+  end
+
+  pipeline :browser do
+    plug(:accepts, ["html"])
+  end
+
+  scope "/", BusiApiWeb do
+    pipe_through :browser
+    get "/", DefaultController, :index
   end
 
   # Enables LiveDashboard only for development
