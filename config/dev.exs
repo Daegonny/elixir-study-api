@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :busi_api, BusiApi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "elixir_study",
+  password: "elixir_study",
   database: "busi_api_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
