@@ -1,3 +1,5 @@
+Elixir Phoenix API impementation based on tutorial available at: https://pamit.medium.com/building-a-restful-backend-with-elixir-phoenix-84fe390975c
+
 # BusiApi
 
 To start your Phoenix server:
